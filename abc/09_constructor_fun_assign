@@ -1,0 +1,39 @@
+
+function bank(bankName, location,ifscCode, branchCode ){
+
+    this.bankName = bankName;
+    this.location = location;
+    this.ifscCode = ifscCode;
+    this.branchCode = branchCode;
+    this.show = function(){
+        console.log(`Bank Details is: ${this.bankName}  ${this.location}   ${this.ifscCode}   ${this.branchCode}`);
+    }
+} 
+
+const yesBank = new bank(`Yes Bank`,`Pune`,`YES001`,`Yes001`);
+yesBank.show();
+
+const sbiBank = new bank(`SBI Bank`,`Hinjewadi`,`SBI002`,`SBI003`);
+sbiBank.show();
+
+const mahBank = new bank(`Maharashtra Bank`,`Hinjewadi`,`SBI002`,`SBI003`);
+mahBank.show();
+
+const axisBank = new bank(`Axis Bank`,`Hinjewadi`,`SBI002`,`SBI003`);
+axisBank.show();
+
+bank.prototype.openTime = "9 am IST";
+bank.prototype.closingTime = "6 pm IST";
+
+console.log(`SBI Open Time is: ${sbiBank.openTime}`);
+console.log(`Axis Closing Time is: ${axisBank.closingTime}`);
+
+console.log(`Yes Bank Details: Bank Name: ${yesBank.bankName} Branch Code:${yesBank.branchCode} Open time is:${yesBank.openTime}`);
+
+
+
+
+
+
+
+
