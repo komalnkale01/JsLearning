@@ -22,15 +22,13 @@ const dataObject = JSON.parse(jsonData);
 console.log(typeof dataObject);
 console.log(dataObject);
 
-console.log(dataObject.role[0]);
-
-
+console.log(`Role Name: ${dataObject.role[0]}`);
 //console.log(dataObject.name);
 
 var lastName = dataObject.name.slice(6);
-console.log(lastName);
+console.log(`Last Name: ${lastName}`);
 
-console.log(dataObject.doj.slice(6));
+console.log(`Year of Joining:  ${dataObject.doj.slice(6)}`);
 
 
 
