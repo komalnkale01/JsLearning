@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Assignment</title>
+</head>
+<body>
+
+    <h2> Local Storage Assignment </h2>
+    <script>
+
+        window.localStorage.setItem("name","Komal Nilesh Kale");
+        window.localStorage.setItem("city","Pune");
+        window.localStorage.setItem("pinCode","431103");
+        window.localStorage.setItem("district","Pune");
+
+        console.log("Inserted Data length", window.localStorage.length);
+        console.log(window.localStorage.getItem("name"));
+        console.log(window.localStorage.getItem("city"));
+        console.log(window.localStorage.getItem("pinCode"));
+        console.log(window.localStorage.getItem("district"));
+
+        window.localStorage.removeItem("city");
+        console.log("After removing city key",window.localStorage.length);
+        //window.localStorage.clear();
+
+        console.log("After clearing local Storage",window.localStorage.length);
+
+
+        console.log("Local Storage");
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
